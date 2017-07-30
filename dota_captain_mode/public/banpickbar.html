@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.banpickbar {
+			box-sizing: border-box;
+			width: 30vw;
+			height: 80vh;
+			border: 1px solid red;
+			/*background-color: #fafad2;*/
+			padding-top: 1%;
+		}
+		img {
+			/*width: 100%;*/
+			max-height: 100%;
+		}
+		.row {
+			height: 6.125%;
+  		font-size: .6em;
+  		margin-bottom: 2%; 
+  		/*border: 1px solid black;*/
+		}
+		.banned {
+			height: 100%;
+			width: 25%;
+			display: inline-block;
+		}
+		.picked {
+			height: 100%;
+			width: 30%;
+			display: inline-block;
+		}
+		.indicator {
+			width: 33%;
+			display: inline-block;
+			height: 100%;
+			font-size: 1.4em;
+			padding-top: 2%;
+			/*border: 1px solid yellow;*/
+			text-align: center;
+			vertical-align: top;
+		}
+		.line.dire {
+			width: 38%;
+			margin-left: 0;
+			margin-top: -14%;
+			margin-bottom: 5%;
+		}
+		.line.radiant{
+			width: 38%;
+			margin-right: 0;
+			margin-top: -14%;
+			margin-bottom: 5%;
+		}
+		.row.pick {
+			height: 8%;
+			margin-bottom: 4%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="banpickbar">
+		<div class="row">
+			<div class="banned dire">
+				<img src="antimage.png" alt="">
+			</div>
+			<div class="indicator">
+				1
+				<hr class="line dire" color="purple">
+				2
+				<hr class="line radiant" color="red">
+			</div>
+			<div class="banned radiant">
+				<img src="alchemist.png" alt="">
+			</div>	
+		</div>
+		<div class="row">
+			<div class="banned dire">
+				<img src="batrider.png" alt="">
+			</div>
+			<div class="indicator">
+				3
+				<hr class="line dire" color="purple">
+				4
+				<hr class="line radiant" color="red">
+			</div>
+			<div class="banned radiant">
+				<img src="axe.png" alt="">
+			</div>	
+		</div>
+		<div class="row pick">
+			<div class="picked dire">
+				<img src="broodmother.png" alt="">
+			</div>
+			<div class="indicator">
+				3
+				<hr class="line dire" color="purple">
+				4
+				<hr class="line radiant" color="red">
+			</div>
+			<div class="picked radiant">
+				<img src="centuar.png" alt="">
+			</div>	
+		</div>
+		<div class="row pick">
+			<div class="picked dire">
+				<img src="abbadon.png" alt="">
+			</div>
+			<div class="indicator">
+				3
+				<hr class="line dire" color="purple">
+				4
+				<hr class="line radiant" color="red">
+			</div>
+			<div class="picked radiant">
+				<img src="beastmaster.png" alt="">
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

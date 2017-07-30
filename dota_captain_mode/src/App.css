@@ -1,0 +1,175 @@
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(34, 51, 62, 0.65), rgba(34, 51, 62, 0.65)),  url('dire.jpg') center center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero_container {
+  text-align: center;
+  justify-content: space-between;
+  width: 70%;
+  /*margin: 0 auto;*/
+  margin-left: 4%;
+  margin-right: 2%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.userForm {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(110,148,188, 0.75), rgba(255,255,240,0.75)),  url('sky_bg.png') center center no-repeat;
+  background-size: cover;
+  /*font-family: 'Bungee Shade', cursive;*/
+  font-family: 'Rubik', serif;
+  text-align: center;
+  padding-top: 9%;
+  color: #D50000;
+}
+
+.userForm > h1 {
+  font-family: 'Bungee Shade', cursive;
+  /*font-family: 'Rubik';*/
+  font-size: 6em;  
+  width: auto;
+  margin-bottom: 1em;
+}
+
+.userForm > p {
+  font-size: 1.6em;
+}
+
+.userForm > .lead {
+  margin: 1em auto;
+  font-size: 2em;
+}
+
+
+.userForm > .lead > input {
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  display: block;
+  margin: 1em auto;
+  width: 30%;
+  text-align: center;
+}
+
+.userForm > .lead > a {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.userForm > h1 > span {
+  background: rgba(211,211,211,.1);
+  color: rgb(35, 35, 35);
+
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.banned {
+  position: relative;
+}
+
+.banned:after {
+  position: absolute;
+  content: '';
+  background: red;
+  display: block;
+  width: 110%;
+  height: 5px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /*//center the X vertically and horizontally:*/
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.info_bar {
+  width: 100%;
+  height: 5%;
+  border: 1px solid red;
+}
+
+/*  max-height: 100%;
+    width: auto;
+
+    max-height: 80%;
+    width: 31%;
+*/
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero_tiles {
+  display: inline-block;
+  width: 5%;
+  height: 10%;
+  margin: .45% 2px;
+}
+
+.hero_tiles > img {
+  width: 90%;
+  height: 100%
+}
+
+.pick_ban_bar {
+  display: inline-block;
+  width: 25%;
+  border: 2px solid black;
+  /*#2D3740*/
+  /*#2D3B47*/
+}
+
+.BanBar {
+  display: inline-block;
+  width: 7%;
+  border: 2px solid black;
+  height: 65vh;
+}
+
+.bar_tile {
+  width: 100%;
+  height: 11%;
+}
+
+.bar_tile > img {
+  max-height: 100%;
+}
+
+
+.nav-link {
+  font-size: 2em;
+  padding-left: 0;
+  padding-right: 2em;
+}

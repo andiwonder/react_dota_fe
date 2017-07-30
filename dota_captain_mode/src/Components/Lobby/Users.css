@@ -1,0 +1,70 @@
+.users_panel {
+  height: 100vh;
+}
+
+.user_avatar {
+  height: 2em;
+  width: 2em;
+  float: left;
+}
+
+.user_card {
+  height: 10%;
+  /*border: 1px solid red;*/
+}
+
+.user-block {  
+}
+
+.users_list {
+  height: 75vh;
+  overflow: scroll;
+  border: 1px solid rgba(0,0,0,.15);
+}
+
+.users_list::-webkit-scrollbar { 
+    display: none; 
+}
+
+.table th {
+  padding: .25rem;
+  border-top: none;
+  border-bottom: 1px solid #eceeef;
+}
+
+.card-title {
+  margin-top: .2em;
+  margin-bottom: 0;
+  padding-left: 18%;
+}
+
+.chat_box {
+  height: 75vh;
+  border: 1px solid rgba(0,0,0,.15);
+  border-left: none;
+  padding: 0;
+  padding-top: 1em;
+}
+
+.chat_box > .input-group > input {
+  border-radius: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.chat_box > .input-group > a {
+  border-radius: 0;
+  border-bottom: 0;
+}
+
+.chat_display {
+  height: 89%;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+.chat_display > img {
+  display: block;
+  margin: 1.5em 0;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500,700" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
+  <meta charset="UTF-8">
+  <title>Mockup</title>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      /*overflow: hidden;*/
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Play', sans-serif;
+    }
+
+    .bg-img {
+      width: 100%;
+      height: 100%;
+      background: url('bg.jpg') center center no-repeat;
+      background-size: cover;
+      text-align: center;
+      /*clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);*/
+    }
+      
+    .bg-img:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #22333e;
+      opacity: .85; 
+    }
+/*    .bg-img:after {
+      background: #F4363B;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 100%;
+      z-index: -1;
+    }*/
+    .bg-img > .logo {
+      position: relative;
+      z-index: 2;
+      width: 5%;
+      display: inline-block;
+      margin-right: 1%;
+      vertical-align: text-bottom;
+    }
+    .bg-img > h1, .bg-img > img, .bg-img > p, .bg-img > h2, .bg-img > .button-container, .bg-img > .vertical_dotted_line {
+      position: relative;
+      z-index: 2;
+      color: white;
+    }
+    .bg-img> p {
+      width: 55%;
+      margin: 5% auto;
+      font-size: 1.3em;
+
+    }
+    .bg-img > h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 5%;
+      font-size: 3em;
+      display: inline-block;
+      font-weight: 500;
+      color: #F4363B;
+    }
+    .bg-img > h2 {
+      font-size: 1.5em;
+      font-weight: 400;
+      margin-bottom: 5%;
+      margin-top: .5%;
+    }
+    .button-container {
+      width: 15%;
+      display: inline-block;
+      margin: 0 2.5%;
+    }
+    .bg-img > .button-container:nth-child(1) { 
+      margin-right: 5%;
+    }
+    .bg-img > .mouse_logo {
+      display: block;
+      margin: 2% auto;
+    }
+    .vertical_dotted_line {
+      border-left: 1.5px dotted #F4363B;
+      height: 15px;
+      width: 0%;
+      margin: 0 auto;
+    } 
+    .features_section_1 {
+      /*background: url('ep_naturalblack.png') center center;*/
+      background: linear-gradient(rgba(34, 51, 62, 0.85), rgba(34, 51, 62, 0.85)),  url('radiant.jpg') center center;
+      background-attachment: fixed;
+      width: 100%;
+      height: 200vh;
+    }
+    .features_container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .features_form_container {
+      width: 90%;
+      padding: 0 5%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      margin-top: 5%;
+    }
+    .feature {
+      width: 28%;
+      display: inline-block;
+      margin: 0 auto;
+      color: white;
+      text-align: center;
+      font-weight: 300;
+      font-size: .9em;
+      /*border: 2px solid white;*/
+    }
+    .feature > .hero_logo {
+      height: 40vh;
+      display: block;
+      margin: 0 auto;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .feature > h2 {
+      margin: 8% 0;
+    }
+    .feature:nth-child(2) {
+      margin-top: -5%;
+      position: relative;
+      z-index: 3;
+    }
+    .feature_logo {
+      height: 15vh;
+      margin-top: 3%;
+    }
+    .form-wide {
+      display: inline-block;
+      width: 30%;
+      height: 50vh;
+      background: #22233E; /* Old browsers */
+      background: -moz-linear-gradient(top, #22233E 0%, #212140 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #22233E 0%,#212140 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #22233E 0%,#212140 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22233E', endColorstr='#212140',GradientType=0 ); /* IE6-9 */
+    }
+    .form-narrow {
+      margin-top: -5%;
+      display: inline-block;
+      width: 32%;
+      height: 80vh;
+      background: #22233E; /* Old browsers */
+      background: -moz-linear-gradient(top, #22233E 0%, #212140 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #22233E 0%,#212140 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #22233E 0%,#212140 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22233E', endColorstr='#212140',GradientType=0 ); /* IE6-9 */
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="bg-img">
+    <img class="logo" src="logo.png" alt="">
+    <h1>Empower</h1>
+    <h2>Track, Reflect, Improve</h2>
+    <p>
+      A new way to help improve your dota gameplay by tracking each game, reflect by taking notes, and measure improvements. Scroll below to explore features.
+    <div class="button-container">
+      <button type="button" class="btn btn-outline-success btn-lg btn-block">Sign-up</button>  
+    </div>
+    <div class="button-container">
+      <button type="button" class="btn btn-outline-primary btn-lg btn-block">Log-in</button>
+    </div>
+    <img class="mouse_logo" src="mouse.png" alt="">
+    <div class="vertical_dotted_line"></div>
+    <img src="down-arrow.png">
+  </div> 
+  <div class="features_section_1">
+    <div class="features_container">    
+      <div class="feature">
+        <img src="am.png" alt="" class="hero_logo">
+        <h2>Farming patterns</h2>
+        <p>
+          learn different farming patterns, power spikes, and item choices for your favourite carry heros. Get different stats such as LH/10, KDA, DMG done for each hero. 
+        </p>
+        <img src="shield.png" class="feature_logo">
+      </div>
+      <div class="feature">
+        <img src="wd.png" alt="" class="hero_logo">
+        <h2>Effictive Warding</h2>
+        <p>
+          learn how to ward with a purpose, different pull timings, and how to control creep equilbrium. Measure item acquisition timings, impact on game, and sucess rate with ease.
+        </p>
+        <img src="medal.png" class="feature_logo">
+      </div>
+      <div class="feature">
+        <img src="dp.png" alt="" class="hero_logo">
+        <h2>Dominate Lane</h2>
+        <p>
+         dominate your lane, survive ganks, and rotate effictevly to maximize your GPM and XPM. Know different matchups and get the edge by picking the best heros.
+        </p>
+        <img src="heart.png" class="feature_logo">
+      </div>
+    </div>
+    <div class="features_form_container">
+      <div class="form-wide jumbotron"></div>
+      <div class="form-narrow jumbotron"></div>
+      <div class="form-wide jumbotron"></div>
+    </div>
+  </div>
+</body>
+</html>
