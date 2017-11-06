@@ -10,6 +10,7 @@ class Users extends Component {
       messages : [],
       img_url : '',
       all_msgs : [],
+      users: ['dotabheem','lqt1','revel2k9']
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -85,7 +86,8 @@ class Users extends Component {
     
 
     // let hero_pin = this.heros[Math.floor(Math.random()*heros.length)];
-    const usersList = this.props.users.map((user) => {
+    // const usersList = this.props.users.map((user) => {
+    const usersList = this.state.users.map((user) => {
       return (
         <tr>        
           <th className="align-items-end">
@@ -127,9 +129,9 @@ class Users extends Component {
           </div>
           <div className="col-md-9 chat_box">
             <div className="jumbotron-fluid chat_display">
-              {this.props.messages.length === 0 ? <h1 className="display-3">Send Message to other users</h1> : null}
-              {this.props.messages.length === 0 ? <h3 className="display-5">use :gif to get gifs .ex :gif_dota_death</h3> : null}
-              {this.props.messages.length === 0 ? <h3 className="display-5">use :dota to get dota emoticon ex :dota_thinking</h3> : null}                                                        
+              {this.state.messages.length === 0 ? <h1 className="display-3">Send Message to other users</h1> : null}
+              {this.state.messages.length === 0 ? <h3 className="display-5">use :gif to get gifs .ex :gif_dota_death</h3> : null}
+              {this.state.messages.length === 0 ? <h3 className="display-5">use :dota to get dota emoticon ex :dota_thinking</h3> : null}                                                        
               {messageList}              
               <p className="lead"></p>
             </div>                    

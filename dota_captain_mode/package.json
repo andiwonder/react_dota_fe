@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "socket.io-client":"*"
+    "react-router-dom": "^4.2.2",
+    "socket.io-client": "*"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
